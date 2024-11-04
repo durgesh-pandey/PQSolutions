@@ -1,0 +1,22 @@
+[package]
+name = "post_quantum_crypto_lib"
+version = "0.5.0"
+edition = "2021"
+
+[dependencies]
+pqcrypto-kyber = "0.7.3"
+pqcrypto-dilithium = "0.5.0"
+pqcrypto-falcon = "0.3.0"
+pqcrypto-sphincsplus = "0.7.0"
+pqcrypto-classicmceliece = "0.2.0"
+pqcrypto-ntru = "0.5.8"
+pqcrypto-traits = "0.3.5"
+serde = { version = "1.0", features = ["derive"] }
+uuid = { version = "1.4", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
+thiserror = "1.0"
+
+[dev-dependencies]
+assert_matches = "1.5"
+criterion = "0.4"
